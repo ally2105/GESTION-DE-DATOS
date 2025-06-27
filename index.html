@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html lang="es">
+
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>CRUD de Productos</title>
+  <script src="https://cdn.jsdelivr.net/npm/sweetalert2@11"></script>
+  <link rel="stylesheet" href="./src/style.css">
+</head>
+
+<body>
+  <div class="contenedor">
+    <h1>GESTION DE DATOS</h1>
+    <input id="nombre" placeholder="Nombre del producto" />
+    <br>
+    <input id="precio" type="number" placeholder="Precio" />
+    <br>
+    <select id="categoria">
+      <option value="Frutas">Frutas</option>
+      <option value="Bebidas">Bebidas</option>
+      <option value="Carnes">Carnes</option>
+      <option value="Aseo personal">Aseo personal</option>
+      <option value="Mecatos">Mecatos</option>
+      <option value="Verduras">Verduras</option>
+      <option value="Otra opcion">Otra opcion</option>
+  </div>
+  </select>
+  <button onclick="agregarProducto()">Agregar producto</button>
+
+  <h2>Lista de productos</h2>
+  <div id="listaProductos"></div>
+
+  <script src="./javascript/javascript.js"></script>
+</body>
+
+</html>
